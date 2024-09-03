@@ -3,7 +3,7 @@ const fs = require('fs');
 const csv = fs.readFileSync('./sample.csv').toString();
 const {
     quebraLinhas, separaColunas, separaConteudo, constroiListaDeObjetos
-} = require('./lib/csv');
+} = require('csv');
 
 const linhas = quebraLinhas(csv);
 const primeiraLinha = linhas.shift();
